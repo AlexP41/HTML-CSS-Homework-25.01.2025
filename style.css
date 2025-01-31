@@ -1,0 +1,167 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* MAIN COLOR: #22b8cf, #087f5b, #066649, #0a373e, #5c940d, #d3f1f5, #0e4a53, #ffe8cc, #cedfb6, #d0bfff, #7c5010, #F79F1F, #39997c, #301f62, #5f3dc4
+Grey color: #343a40, #495057
+*/
+
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Great Vibes", serif;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  color: #22b8cf;
+  font-size: 48px;
+  background-color: #0a373e;
+}
+
+nav {
+  padding: 24px;
+  display: flex;
+  gap:30px;
+  justify-content: flex-end;
+  padding-right: 50px;
+  background-color: #d3f1f53e;
+}
+
+
+.nav-btn {
+  padding: 12px 24px;
+  text-decoration: none;
+  color: #d3f1f5;
+  font-size: 24px;
+  background-color: #0e4a53;
+  border-radius: 32px;
+}
+
+.nav-btn:link,
+.nav-btn:visited {
+  color: #d3f1f5;
+  background-color: #0e4a53;
+}
+
+.nav-btn:hover,
+.nav-btn:active {
+  background-color: #d3f1f5;
+  color: #0e4a53;
+  box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.1);
+} 
+
+
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #343a40;
+
+}
+
+footer {
+  margin-bottom: 48px;
+  font-size: 14px;
+  color: #495057;
+  text-align: center;
+}
+
+a:link,
+a:visited {
+
+}
+
+.affairs li {
+  list-style: none;
+  margin-bottom: 12px;
+  margin-left: 12px;
+}
+
+.illustration {
+  max-width: 300px;  /* Фіксована ширина */
+  height: 300px; /* Фіксована висота */
+  object-fit: contain; /* Зберігає пропорції без обрізки */
+}
+
+
+.container {
+  display: grid;
+  justify-content: space-between;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 128px;
+  margin: 64px 128px 128px 128px;
+}
+
+
+.third-part-of-day-1 {
+  background-color: #ffe8cc;
+  padding: 32px 32px; 
+  border-radius: 48px;
+}
+
+.third-part-of-day-2 {
+  background-color: #cedfb6;
+  padding: 32px 32px; 
+  border-radius: 48px;
+}
+.third-part-of-day-3 {
+    background-color: #d0bfff;
+    padding: 32px 32px; 
+    border-radius: 48px;
+}
+
+/* Morning */
+.morning-time {
+  color: #7c5010;
+  margin-bottom: 24px;
+}
+
+.time-periods-morning {
+  color: #F79F1F;
+  margin-bottom: 12px;
+}
+
+
+/* Afternoon */
+.afternoon-time {
+  /* #087f5b */
+  color: #066649;
+  margin-bottom: 24px;
+}
+
+.time-periods-afternoon {
+  color: #39997c;
+  margin-bottom: 12px;
+}
+
+/* Evening */
+.evening-time {
+  color: #301f62;
+  margin-bottom: 24px;
+}
+
+.time-periods-evening {
+  color: #5f3dc4;
+  margin-bottom: 12px;
+}
+
+
